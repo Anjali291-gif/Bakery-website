@@ -125,6 +125,14 @@ a {
     font-weight: 300;
 }
 
+.loader-logo-img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 15px rgba(197, 168, 128, 0.15));
+}
+
 .loader-sub {
     font-family: var(--font-sans);
     font-size: 0.7rem;
@@ -197,6 +205,17 @@ a {
 .logo {
     display: flex;
     align-items: center;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.4s var(--ease-luxury);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.06);
 }
 
 .logo-text {
@@ -813,6 +832,19 @@ a {
     letter-spacing: 0.05em;
     margin-bottom: 20px;
     color: var(--white);
+}
+
+.footer-logo-img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 2px 10px rgba(255, 255, 255, 0.08));
+    transition: transform 0.4s var(--ease-luxury);
+}
+
+.footer-logo-img:hover {
+    transform: scale(1.05);
 }
 
 .footer-brand p {
