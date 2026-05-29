@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Sucre | Cakesbynitika</title>
+    <meta name="description" content="Premium handcrafted wedding cakes designed for unforgettable celebrations. Indulge in culinary artistry.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-fontawesome/6.4.0/css/all.min.css">
+    <!-- Local CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader-logo">MAISON DE SUCRE</div>
+            <div class="loader-sub">Artisanal Wedding Cake Couturier</div>
+            <div class="loader-bar-wrapper">
+                <div id="loader-bar" class="loader-bar"></div>
+            </div>
+            <div id="loader-percentage" class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="nav-logo">
+                <span class="logo-text">Maison de Sucre</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#custom-design" class="nav-link">Bespoke Service</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#tasting" class="nav-link">Tasting Room</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#reserve" class="btn-nav glass-btn">Inquire Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SCROLL CONTAINER -->
+    <main>
+        
+        <!-- HERO SECTION (Pin Container) -->
+        <section id="hero-section" class="hero-pin-section" id="hero-section-trigger">
+            <div class="hero-sticky-wrapper">
+                
+                <!-- BACKGROUND CANVAS FOR 3D CAKE & PARTICLES -->
+                <canvas id="hero-canvas"></canvas>
+
+                <!-- AMBIENT LIGHTING OVERLAYS -->
+                <div class="ambient-glow radial-glow-1"></div>
+                <div class="ambient-glow radial-glow-2"></div>
+                
+                <!-- CONTENT SLIDES -->
+                
+                <!-- Slide 1: Welcome Intro -->
+                <div class="hero-slide active" id="slide-welcome">
+                    <div class="slide-content text-center">
+                        <div class="tagline uppercase-tracking" id="tagline-1">The Art of Sugar</div>
+                        <h1 class="hero-heading" id="heading-1">Cakesby<span class="italic-serif">nitika</span></h1>
+                        <p class="hero-subheading" id="subheading-1">
+                            Premium handcrafted cakes designed for unforgettable celebrations.
+                        </p>
+                        <div class="hero-ctas" id="ctas-1">
+                            <a href="#collections" class="btn btn-primary">
+                                <span>Explore Collection</span>
+                            </a>
+                            <a href="#book-custom" class="btn btn-secondary glass-btn">
+                                <span>Book Custom Design</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Feature Exploration -->
+                <div class="hero-slide" id="slide-features">
+                    <!-- Floating feature labels with visual pointers -->
+                    <div class="feature-item item-left" id="feature-1" style="top: 30%; left: 10%;">
+                        <div class="feature-badge">01</div>
+                        <div class="feature-content">
+                            <h3>Artisanal Textures</h3>
+                            <p>Hand-textured fondant detailed with delicate layers and organic 24-karat gold leaf gilding.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item item-right" id="feature-2" style="top: 45%; right: 10%;">
+                        <div class="feature-badge">02</div>
+                        <div class="feature-content">
+                            <h3>Sculpted Sugar Floristry</h3>
+                            <p>Intricate, botanically accurate sugar flowers handcrafted petal by petal over dozens of hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item item-left" id="feature-3" style="top: 65%; left: 15%;">
+                        <div class="feature-badge">03</div>
+                        <div class="feature-content">
+                            <h3>Couture Tailoring</h3>
+                            <p>Every silhouette is custom designed to harmonize with your venue, gown, and event theme.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Outro Showcase -->
+                <div class="hero-slide" id="slide-outro">
+                    <div class="slide-content text-center">
+                        <div class="tagline uppercase-tracking" id="tagline-3">Bespoke Experience</div>
+                        <h2 class="hero-heading-secondary" id="heading-3">Crafting Your Sweetest Memories</h2>
+                        <p class="hero-subheading" id="subheading-3">
+                            Indulge in a collaborative design journey that translates your love story into edible haute couture.
+                        </p>
+                        <div class="hero-ctas" id="ctas-3">
+                            <a href="#tasting" class="btn btn-gold">
+                                <span>Schedule A Tasting</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCROLL INDICATOR -->
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Scroll to Experience</span>
+                    <div class="scroll-line-container">
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECONDARY DETAIL CONTENT SECTION (To scroll into) -->
+        <section id="details-section" class="details-section">
+            <div class="details-container">
+                <div class="details-grid">
+                    <div class="details-text-col">
+                        <span class="section-subtitle">THE MAISON PHILOSOPHY</span>
+                        <h2 class="section-title">Where Taste Meets Couture Artistry</h2>
+                        <p class="section-desc">
+                            At Maison de Sucre, we believe a wedding cake is not merely a dessert, but the centerpiece of your celebration and a reflection of your shared aesthetic. 
+                        </p>
+                        <p class="section-desc">
+                            Under the direction of master sugar artist, our bakery blends classic French pastry techniques with modern architectural structure. We source only the finest raw ingredients globally—Madagascan vanilla beans, Belgian white chocolate, and fresh local organic dairies.
+                        </p>
+                        <div class="details-features">
+                            <div class="mini-feature">
+                                <i class="fa-regular fa-star gold-icon"></i>
+                                <div>
+                                    <h4>Award Winning Designers</h4>
+                                    <p>Acclaimed internationally for precision sugar work and flawless execution.</p>
+                                </div>
+                            </div>
+                            <div class="mini-feature">
+                                <i class="fa-solid fa-wheat-awn gold-icon"></i>
+                                <div>
+                                    <h4>Gastronomic Excellence</h4>
+                                    <p>Flavor menus curated by pastry chefs to deliver taste profiles as sophisticated as the designs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-image-col">
+                        <div class="image-glass-card">
+                            <div class="card-inner-glow"></div>
+                            <div class="card-content">
+                                <div class="card-meta">EST. 2018</div>
+                                <h3 class="card-title">Bespoke Cake Consultations</h3>
+                                <p class="card-body">
+                                    Our consultation process includes a private tasting session in our luxury parlor and custom watercolor sketch mockups of your cake design.
+                                </p>
+                                <a href="#consultation" class="card-link">Reserve Your Consultation <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Maison de Sucre</h3>
+                <p>Artisanal wedding cake design for the sophisticated celebrate.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Inquiries</h4>
+                <a href="mailto:couture@maisondesucre.com">couture@maisondesucre.com</a>
+                <p>+1 (800) 555-0199</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow the Art</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maison de Sucre. All Rights Reserved. Crafted with elegance.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
+    <!-- Main JS logic -->
+    <script src="main.js"></script>
+</body>
+</html>
